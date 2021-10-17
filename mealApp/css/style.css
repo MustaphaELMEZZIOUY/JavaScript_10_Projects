@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;1,300;1,400&display=swap');
+
+
+html, body{
+    height: 100%;
+}
+
+.globalContainer {
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 5px 15px;
+    background-color: #f9ea8f;
+    background-image: linear-gradient(315deg, #f9ea8f 0%, #aff1da 74%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.globalContainer .mealsContainer{
+    background: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 60%;
+    background: transparent;
+}
+
+.globalContainer .mealsContainer .search{
+    width: 70%;
+    margin: 10px auto;
+}
+
+.globalContainer .mealsContainer .likedMeals{
+    display: flex;
+    margin-top: 15px;
+    overflow: auto;
+    background: #ffb58436;
+    border-radius: 5px;
+    width: 75%;
+    margin: auto;
+}
+
+/* *******************************Customise ScrollBar*************************************** */
+
+/* width */
+.globalContainer .mealsContainer .likedMeals::-webkit-scrollbar, 
+.srchRandomMeal::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+  }
+
+  /* Handle */
+  .globalContainer .mealsContainer .likedMeals::-webkit-scrollbar-thumb, 
+  .srchRandomMeal::-webkit-scrollbar-thumb {
+    background: #ff6600cc;
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  .globalContainer .mealsContainer .likedMeals::-webkit-scrollbar-thumb:hover, 
+  .srchRandomMeal::-webkit-scrollbar-thumb:hover {
+    background: #ff660067;
+  }
+/* *******************************Customise ScrollBar*************************************** */
+
+a.meal{
+    display: block;
+    color: rgb(56, 63, 70);
+    cursor: pointer;
+}
+.globalContainer .mealsContainer .likedMeals .meal{
+    position: relative;
+    text-align: center;
+    margin: 0 10px;
+    padding-top: 10px;
+}
+
+.globalContainer .mealsContainer .likedMeals .meal img{
+    height: 70px;
+    width: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid rgba(253, 148, 0, 0.575);
+    display: block;
+    margin-bottom: 10px;
+    box-shadow: 0 0 5px 3px rgba(122, 131, 139, 0.514);
+}
+
+.globalContainer .mealsContainer .likedMeals .meal span{
+    display:inline-block;
+    width:70px;
+    white-space: nowrap;
+    overflow:hidden !important;
+    text-overflow: ellipsis;
+}
+
+.globalContainer .mealsContainer .likedMeals .meal button{
+    display: none;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.globalContainer .mealsContainer .likedMeals .meal button:focus{
+    outline: none;
+}
+
+.srchRandomMeal{
+    overflow-y: auto;
+    height: 70%;
+    width: 70%;
+    margin: auto;
+}
+
+.srchRandomMeal .meal{
+    width: 70%;
+    max-height: 200px;
+    height: auto;
+    margin: 10px auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.srchRandomMeal .meal img{
+    width: 100%;
+    height: auto;
+}
+
+.srchRandomMeal .meal .details{
+    position: absolute;
+    bottom: 0;
+    background: white;
+    width: 100%;
+}
+
+.srchRandomMeal .meal .details h4{
+    padding: 5px 10px;
+    font-family: 'Roboto Condensed';
+    width: 50%;
+    display:inline-block;
+    white-space: nowrap;
+    overflow:hidden !important;
+    text-overflow: ellipsis;
+}
+
+.srchRandomMeal .meal .details button{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border: 0;
+    font-size: 20px;
+    padding: 0;
+    color: lightgray; /*or blue if it liked*/
+}
+
+.srchRandomMeal .meal .details button.like{
+    color: rgb(248, 96, 108);
+}
+
+.srchRandomMeal .meal .details button:hover{
+    background: transparent;
+}
+
+.srchRandomMeal .meal .details button:focus{
+    outline: none;
+    background: transparent;
+}
+
+.srchRandomMeal .meal span{
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    padding: 5px 10px;
+    border-radius: 0 5px 5px 0;
+    background: rgba(75, 197, 185, 0.76);
+    font-family: 'Roboto Condensed';
+}
+
+.modal-content{
+    text-align: center;
+}
+
+.modal-content .modal-body img{
+    display: block;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.modal-content .modal-body p{
+    font-family: 'Roboto Condensed';
+    font-size: 17px;
+}
+
+.modal-content .modal-body h4{
+    font-family: 'Roboto Condensed';
+    font-size: 17px;
+    font-weight: bolder;
+    text-align: left;
+}
+
+.modal-content .modal-body ul{
+    list-style: upper-roman;
+    text-align: left;
+}
+
+
+
+
+
+
+

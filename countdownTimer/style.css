@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Roboto+Condensed&family=Shippori+Mincho:wght@600&display=swap');
+
+html, body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+html { 
+    background: url(./assets/mountain.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  body{
+      background-color: transparent;
+  }
+
+
+  .container-fluid .jumbotron{
+      background-color: transparent;
+      padding-top: 80px;
+      text-align: center;
+      color: white;
+  }
+
+  .container-fluid .jumbotron h1{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bolder;
+    font-size: 6rem;
+    color: rgb(255, 255, 255);
+  }
+
+  .container-fluid .row{
+      color: white;
+      text-align: center;
+      margin: 20px 20%;
+  }
+
+  .container-fluid .row > div{
+      padding-top: 5px;
+      padding-bottom: 5px;
+  }
+
+  .container-el{
+      text-align: center;
+      background-color: rgba(145, 105, 105, 0.603);
+      padding: 15px 10px;
+  }
+
+  .container-el h4{
+      margin-bottom: 20px;
+      font-family: 'Akaya Kanadaka', cursive;
+      font-size: 30px;
+      line-height: 15px;
+
+  }
+
+  .container-el span{
+    font-family: 'Shippori Mincho', serif;
+    font-size: 25px;
+  }

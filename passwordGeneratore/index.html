@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="./script.js" defer></script>
+
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class='form'>
+        <div class="pass">
+            <input type="text" id="password" class="password" value="" readonly>
+            <button class="copy">copy</button>
+        </div>
+
+        <div class="length">
+            <label for="length">Length: </label>
+            <input type="number" id="length" class="lengthpass" max="40" min="5" value="12">
+        </div>
+
+        <div class="upper">
+            <label for="upper">Containe UpperCase Latter: </label>
+            <input type="checkbox" id="upper" class="uppercase">
+        </div>
+
+        <div class="lower">
+            <label for="lower">Contiane Lowercase Latter: </label>
+            <input type="checkbox" id="lower" class="lowercase">
+        </div>
+
+        <div class="number">
+            <label for="number">Contiane Lowercase Latter: </label>
+            <input type="checkbox" id="number" class="numbers">
+        </div>
+
+        <div class="symbol">
+            <label for="symbol">Containe Symbols: </label>
+            <input type="checkbox" id="symbol" class="symbols">
+        </div>
+
+        <div class="submit">
+            <button type="submit" class="generate">Generate Password</button>
+        </div>
+    </div>
+</body>
+
+</html>

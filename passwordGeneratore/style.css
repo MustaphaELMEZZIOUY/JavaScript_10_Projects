@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;1,300;1,400&display=swap');
+
+body{
+    background-color: #9fa4c4;
+    background-image: linear-gradient(315deg, #9fa4c4 0%, #9e768f 74%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form {
+    width: 400px;
+    background: #80536e;
+    padding: 15px;
+    color: rgba(0, 0, 0, 0.658);
+}
+
+.form > div{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    margin: 5px 0 0;
+}
+
+.form .pass{
+    position: relative;
+}
+
+.form .pass input{
+    width: 100%;
+    padding: 5px;
+
+}
+
+.form .pass button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: opacity .5 ease-out, transform .5 ease-out;
+    opacity: 0;
+}
+
+.form .pass:hover button{
+    opacity: 1;
+    transform: scaleX(0, 100%);
+}
+
+.form .submit button{
+    width: 100%;
+    font-size: 15px;
+    font-weight: bolder;
+    background: darkgoldenrod;
+    border: none;
+    padding: 5px;
+}
+

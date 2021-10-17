@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;1,300;1,400&display=swap');
+
+
+html, 
+body{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+    background: cadetblue;
+    padding-top: 50px;
+}
+
+.globaleContainer{
+    height: inherit;
+    width: inherit;
+    display: inherit;
+    flex-wrap: inherit;
+}
+
+.note {
+    display: inline-block;
+    width: 32%;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.note .buttons{
+    background: rgba(47, 133, 47, 0.473);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.note .buttons button{
+    margin: 0 5px;
+    background: transparent;
+    color: wheat;
+    border: none;
+    padding: 5px;
+}
+
+.note .buttons button:focus{
+    outline: none;
+}
+
+.note .main{
+    width: 100%;
+    height: 400px;
+}
+
+.note .main .text{
+    height: 100%;
+    background: white;
+    padding: 10px;
+}
+
+.note .main textarea{
+    height: 100%;
+    width: 100%;
+    resize: none;
+}
+
+.note .main textarea:focus{
+    outline: none;
+}
+
+.newNote{
+    background: rgb(255, 192, 75);
+    color: rgb(0, 0, 0);
+    border: none;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.newNote:focus{
+    outline: none;
+}
+
+.newNote i{
+    margin-right: 5px;
+}
+
+
+
+
+

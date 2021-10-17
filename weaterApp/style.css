@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;1,300;1,400&display=swap');
+
+body {
+    background: linear-gradient(150deg, rgb(184, 184, 184), rgb(63, 62, 62));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+form input{
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+    background: rgba(201, 201, 201, 0.61);
+}
+
+form input::placeholder{
+    color: rgba(0, 0, 0, 0.685);
+}
+
+form input:focus{
+    outline: none;
+}
+
+.weather {
+    display: block;
+    width: 50%;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 25px;
+
+}
+
+h4 img{
+    display: inline-block;
+    width: 25px;
+    margin: 5px 10px;
+}
+
